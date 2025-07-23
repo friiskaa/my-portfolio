@@ -5,8 +5,8 @@ import { FaReact, FaBootstrap, FaHtml5, FaCss3, FaLinkedin, FaInstagram } from "
 import { SiNextdotjs } from "react-icons/si";
 import { RiTailwindCssFill, RiJavascriptFill } from "react-icons/ri";
 import { BiLogoVisualStudio } from "react-icons/bi";
-import { motion, easeIn } from "framer-motion";
-import { parent, child, fadeUp, fadeItem, container } from "../animation";
+import { motion } from "framer-motion";
+import { parent, child, fadeItem, container } from "../animation";
 import TypeWriter from "./components/Typewriter";
 import HeroSection from "./components/HeroSection";
 
@@ -175,7 +175,7 @@ export default function Home() {
           <div className="group overflow-hidden shadow-xl rounded-lg bg-slate-200 dark:bg-slate-800 hover:shadow-2xl transition duration-300">
             <Image
               className="w-full h-64 object-cover rounded-t-lg"
-              src="/projects/job-fair.png"
+              src="/image-projects/job-fair.png"
               alt="Job Fair System"
               width={500}
               height={500}
@@ -209,7 +209,7 @@ export default function Home() {
           <div className="group overflow-hidden shadow-xl rounded-lg bg-slate-200 dark:bg-slate-800 hover:shadow-2xl transition duration-300">
             <Image
               className="w-full h-64 object-cover rounded-t-lg"
-              src="/projects/sila.png"
+              src="/image-projects/sila.png"
               alt="SiLa Project"
               width={500}
               height={500}
