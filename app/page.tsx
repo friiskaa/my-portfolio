@@ -175,7 +175,7 @@ export default function Home() {
           <div className="group overflow-hidden shadow-xl rounded-lg bg-slate-200 dark:bg-slate-800 hover:shadow-2xl transition duration-300">
             <Image
               className="w-full h-64 object-cover rounded-t-lg"
-              src="/job-fair.png"
+              src="/projects/job-fair.png"
               alt="Job Fair System"
               width={500}
               height={500}
@@ -209,7 +209,7 @@ export default function Home() {
           <div className="group overflow-hidden shadow-xl rounded-lg bg-slate-200 dark:bg-slate-800 hover:shadow-2xl transition duration-300">
             <Image
               className="w-full h-64 object-cover rounded-t-lg"
-              src="/sila.png"
+              src="/projects/sila.png"
               alt="SiLa Project"
               width={500}
               height={500}
