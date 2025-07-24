@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { FaReact, FaBootstrap, FaHtml5, FaCss3, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaReact, FaBootstrap, FaHtml5, FaCss3, FaLinkedin, FaInstagram, FaArrowAltCircleDown } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 import { RiTailwindCssFill, RiJavascriptFill } from "react-icons/ri";
 import { BiLogoVisualStudio } from "react-icons/bi";
@@ -28,6 +28,13 @@ export default function Home() {
         className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-8">
           I&apos;m passionate about front-end web development and enjoy creating responsive, modern websites using tools like React, Next.js, and Tailwind CSS. I&apos;m always learning and exploring new technologies to improve my skills.
         </motion.p>
+
+        <a href="/resume/CV-Friska.pdf" download
+          className="inline-flex bg-violet-700 rounded-full px-6 py-3 text-white font-semibold
+                    hover:bg-violet-300 hover:text-slate-700 transition ">
+          <FaArrowAltCircleDown className="mr-2 my-auto h-6 w-6" />
+          <span>Download CV</span>
+        </a>
       </div>
 
       <div className="relative w-full md:w-1/2 mb-2 md:mb-0 flex justify-center items-center">
@@ -250,9 +257,9 @@ export default function Home() {
         <div className="w-full lg:w-1/2">
           <h3 className="text-2xl font-semibold uppercase tracking-wider mt-8">Contact Me</h3>
           <p className="text-gray-600 dark:text-gray-300 text-base leading-relaxed">
-            <span className="text-violet-700 font-semibold">Let’s Get In Touch!</span> <br />
+            <span className="text-violet-700 font-semibold">Let&apos;s Get In Touch!</span> <br />
             If you have a project, idea, or just want to say hi, feel free to contact me.
-            I’m always open to new opportunities and collaborations.
+            I&apos;m always open to new opportunities and collaborations.
           </p>
           <div className="flex pt-4 gap-2 text-2xl">
             <a href="https://www.linkedin.com/in/friskahdyt/"  target="_blank" rel="noopener noreferrer">
@@ -272,6 +279,7 @@ export default function Home() {
                 type="text" name="fullname"
                 className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-violet-500"
                 placeholder="Your Name"
+                required
               />
             </div>
             <div>
@@ -280,6 +288,7 @@ export default function Home() {
                 type="email" name="email"
                 className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-violet-500"
                 placeholder="your@email.com"
+                required
               />
             </div>
             <div>
@@ -288,6 +297,7 @@ export default function Home() {
                 name="message" rows={4}
                 className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-violet-500"
                 placeholder="Write your message here..."
+                required
               ></textarea>
             </div>
             <button
