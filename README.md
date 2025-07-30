@@ -11,6 +11,8 @@ This is my personal portfolio website built with Next.js and deployed on Vercel.
 - `pages/`: Main routes of the website
 - `components/`: Reusable React components
 - `public/`: Static assets (images, icons, etc.)
+- `app/blog/[id]/`: Dynamic route for individual blog detail pages
+- `components/Blog.tsx`: Blog list component that fetches data from a Laravel API
 
 ---
 
@@ -19,6 +21,7 @@ This is my personal portfolio website built with Next.js and deployed on Vercel.
 - Responsive design
 - Project showcase section
 - Contact form (using FormSubmit)
+- Blog section (fetched from Laravel REST API)
 - Animated UI with Framer Motion
 - Deployed to Vercel
 
@@ -29,6 +32,7 @@ This is my personal portfolio website built with Next.js and deployed on Vercel.
 - **Framework**: Next.js (React)
 - **Styling**: Tailwind CSS
 - **Animations**: Framer Motion
+- **Backend**: Laravel API for blog data
 - **Deployment**: Vercel
 
 ---
@@ -38,6 +42,7 @@ This is my personal portfolio website built with Next.js and deployed on Vercel.
 ![Homepage](./public/screenshots/portfolio-home.png)
 ![Tech/Tools](./public/screenshots/portfolio-about.png)
 ![Projects](./public/screenshots/portfolio-projects.png)
+![Blogs](./public/screenshots/portfolio-blogs.png)
 
 ---
 

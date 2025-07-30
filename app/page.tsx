@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import { parent, child, fadeItem, container } from "../animation";
 import TypeWriter from "./components/Typewriter";
 import HeroSection from "./components/HeroSection";
+import Blog from "./components/Blog";
 
 export default function Home() {
   return ( 
@@ -251,6 +252,10 @@ export default function Home() {
     </section>
     {/* PROJECT SECTION END */}
 
+    {/* BLOG SECTION START */}
+    <Blog />
+    {/* BLOG SECTION END */}
+
     {/* CONTACT SECTION START */}
     <section id="contact" className="bg-white dark:bg-gray-900 py-20 px-6">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
@@ -261,7 +266,7 @@ export default function Home() {
             If you have a project, idea, or just want to say hi, feel free to contact me.
             I&apos;m always open to new opportunities and collaborations.
           </p>
-          <div className="flex pt-4 gap-2 text-2xl">
+            <div className="flex pt-4 gap-2 text-2xl">
             <a href="https://www.linkedin.com/in/friskahdyt/"  target="_blank" rel="noopener noreferrer">
               <FaLinkedin className="hover:text-[#0077B5] transition ease-in-out delay-150 duration-300" />
             </a>
