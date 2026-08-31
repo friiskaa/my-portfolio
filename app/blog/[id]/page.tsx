@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { IoChevronBack } from "react-icons/io5";
-import { Metadata } from "next";
 
 type Blog = {
   id: number;
@@ -12,21 +12,11 @@ type Blog = {
   thumbnail: string;
 };
 
-interface PageProps {
-  params: {
-    id: string;
-  };
-}
+export type paramsType = Promise<{ id: string }>;
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  return {
-    title: `Blog - ${params.id}`,
-    description: "Blog detail page",
-  };
-}
-
-export default async function BlogDetail({ params }: PageProps) {
-  const res = await fetch(`http://localhost:8000/api/blog/${params.id}`);
+export default async function BlogDetail(props: { params: paramsType }) {
+  const { id } = await props.params;
+  const res = await fetch(`http://localhost:8000/api/blog/${id}`);
 
   if (!res.ok) return notFound();
 
@@ -35,10 +25,12 @@ export default async function BlogDetail({ params }: PageProps) {
   return (
     <div className="max-w-4xl mx-auto px-4 py-10">
       <h1 className="text-3xl font-bold mt-10 mb-4">{blog.title}</h1>
-      <img
+      <Image
         src={blog.thumbnail}
-        className="w-full mb-4 rounded object-cover h-80"
         alt={blog.title}
+        width={800}
+        height={400}
+        className="w-full mb-4 rounded object-cover h-80"
       />
       <div dangerouslySetInnerHTML={{ __html: blog.content }} />
       <Link

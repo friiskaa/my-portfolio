@@ -247,13 +247,47 @@ export default function Home() {
               </a>
             </div>
           </div>
+
+          <div className="group overflow-hidden shadow-xl rounded-lg bg-slate-200 dark:bg-slate-800 hover:shadow-2xl transition duration-300">
+            <Image
+              className="w-full h-64 object-cover rounded-t-lg"
+              src="/image-projects/sekaba.jpeg"
+              alt="SiLa Project"
+              width={500}
+              height={500}
+            />
+            <div className="p-5">
+              <h1 className="font-bold text-xl text-slate-800 dark:text-white mb-2">
+                SEKABA: Sistem Evaluasi Kemampuan Membaca Anak Sekolah Dasar
+              </h1>
+              <p className="text-sm text-justify text-slate-700 dark:text-slate-300 mb-4">
+                SEKABA adalah aplikasi web untuk mendukung evaluasi kemampuan membaca anak sekolah dasar. Sistem mengintegrasikan OpenAI Speech-to-Text API untuk mentranskripsikan rekaman bacaan, kemudian menganalisis ketepatan dan kelancaran membaca menggunakan WER dan WCPM. Dilengkapi dengan visualisasi kata benar dan salah, kuis pemahaman bacaan, riwayat evaluasi, dan pemantauan perkembangan membaca.
+              </p>
+
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["Next.js", "Express.js", "MySQL", "OpenAI API", "Tailwind CSS"].map((tech, idx) => (
+                  <span key={idx} className="bg-violet-100 text-violet-700 dark:bg-violet-700 dark:text-white text-xs font-medium px-3 py-1 rounded-full">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <a
+                href="https://sekaba.mallexibra.my.id/"
+                target="_blank"
+                className="inline-block bg-violet-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-violet-500 transition"
+              >
+                View Project
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     {/* PROJECT SECTION END */}
 
     {/* BLOG SECTION START */}
-    <Blog />
+    {/* <Blog /> */}
     {/* BLOG SECTION END */}
 
     {/* CONTACT SECTION START */}

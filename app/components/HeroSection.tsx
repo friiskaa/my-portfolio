@@ -13,7 +13,7 @@ export default function HeroSection() {
             >
             
                 <Image
-                src="/friska.png"
+                src="/friska.jpg"
                 alt="Hero Photo"
                 width={420}
                 height={420}
