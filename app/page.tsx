@@ -9,7 +9,6 @@ import { motion } from "framer-motion";
 import { parent, child, fadeItem, container } from "../animation";
 import TypeWriter from "./components/Typewriter";
 import HeroSection from "./components/HeroSection";
-import Blog from "./components/Blog";
 
 export default function Home() {
   return ( 
