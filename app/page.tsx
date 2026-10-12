@@ -29,7 +29,7 @@ export default function Home() {
           I&apos;m passionate about front-end web development and enjoy creating responsive, modern websites using tools like React, Next.js, and Tailwind CSS. I&apos;m always learning and exploring new technologies to improve my skills.
         </motion.p>
 
-        <a href="/resume/CV-Friska.pdf" download
+        <a href="/resume/FRISKA APRILIANA HIDAYATI_CV.pdf" download
           className="inline-flex bg-violet-700 rounded-full px-6 py-3 text-white font-semibold
                     hover:bg-violet-300 hover:text-slate-700 transition ">
           <FaArrowAltCircleDown className="mr-2 my-auto h-6 w-6" />
